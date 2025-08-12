@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 3;
+}
+
+header, nav, aside, div, article, footer {
+border: 1px solid black;
+}
+header {
+    height: 10vh;
+
+}
+
+.navigation{
+        margin-top: 1vh;
+    height: 5vh;
+}
+aside{
+    display: inline-block;
+    width: 5vw;
+    height: 60vh
+    
+}
+.mid{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+    width: 88vw;
+    overflow: auto;
+}
+footer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 10vw;
+}
+.mid{
+    width: 180vh;
+    height: 60vh;
+}
+article{
+    height: 30vh;
+}
+.innermid{
+    height: 30vh;
+}
+.bothsection {
+    display: flex;
+    gap: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+aside{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    overflow:auto
+}
+
+.leftsection{
+    width: 50vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+    height: 20vh;
+}
+
+.rightsection{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 50vh;
+    border: 1px solid black;
+    height: 20vh;
+}
+
+@media screen and (max-width: 600px){
+    .bothsection {
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .leftsection, .rightsection {
+        width: 100%;
+        margin-left: 0;
+    }
+    aside{
+        display: flex;
+    }
+    .mid{
+        display: block;
+    }
+}
